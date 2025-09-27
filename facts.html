@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Shopping Facts</title>
+  <style>
+    /* --- your CSS kept the same --- */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+      margin: 0;
+      padding: 0;
+    }
+    .top-left-title {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #0D47A1;
+      z-index: 100;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      z-index: 100;
+    }
+    .navbar .menu { display: flex; gap: 20px; }
+    .navbar .menu a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 40px;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 2px solid #0D47A1;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .navbar .menu a:hover {
+      transform: scale(1.1);
+      background-color: #a6a6a6;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 36px;
+    }
+    .facts-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .fact-card {
+      background-color: white;
+      border: 2px solid #0D47A1;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 15px 0;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+    .fact-card:nth-child(even) { background-color: #fff7ec; }
+    .fact-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .fact-card h2 { margin: 0 0 10px; font-size: 24px; }
+    .fact-card p { margin: 0; font-size: 18px; line-height: 1.5; }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fact-card:nth-child(1) { animation-delay: 0s; }
+    .fact-card:nth-child(2) { animation-delay: 0.2s; }
+    .fact-card:nth-child(3) { animation-delay: 0.4s; }
+    .fact-card:nth-child(4) { animation-delay: 0.6s; }
+    .fact-card:nth-child(5) { animation-delay: 0.8s; }
+    .fact-card:nth-child(6) { animation-delay: 1s; }
+    .fact-card:nth-child(7) { animation-delay: 1.2s; }
+    .fact-card:nth-child(8) { animation-delay: 1.4s; }
+    .fact-card:nth-child(9) { animation-delay: 1.6s; }
+    .fact-card:nth-child(10) { animation-delay: 1.8s; }
+    @media (max-width: 600px) {
+      .fact-card h2 { font-size: 20px; }
+      .fact-card p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-left-title">Smart Consumer</div>
+
+  <div class="navbar">
+    <div class="menu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="facts.html" class="active">FACTS</a>
+    </div>
+  </div>
+
+  <h1>Cool Facts About Shopping & Consuming 🛒</h1>
+
+  <div class="facts-container">
+    <div class="fact-card">
+      <h2>📦 Online shopping is growing fast.</h2>
+      <p>More and more people prefer buying online because it’s easy and often cheaper than stores.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>🛍️ Impulse buying is common.</h2>
+      <p>Shiny displays and “limited offers” make many people buy things they don’t really need.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>💳 Credit cards can trick you.</h2>
+      <p>It’s easy to overspend when you don’t see the cash leaving your hands right away.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>🧾 Always check expiration dates.</h2>
+      <p>Products on sale might be close to expiry — smart shoppers always double-check labels.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>♻️ Packaging makes a big difference.</h2>
+      <p>Eco-friendly packaging reduces waste and is better for the environment.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>🧴 Everyday products have active ingredients.</h2>
+      <p>Soaps, cosmetics, and cleaners often contain chemicals that can help — or harm if misused.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>⚠️ Ads influence your choices.</h2>
+      <p>Colorful marketing and slogans are designed to make you buy, even if you don’t need it.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>💡 Reading reviews helps.</h2>
+      <p>Checking what other buyers say online can save you from wasting money on bad products.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>🛒 Shopping lists save money.</h2>
+      <p>People who make a list before shopping spend less and avoid unnecessary purchases.</p>
+    </div>
+
+    <div class="fact-card">
+      <h2>🌍 Your purchase has impact.</h2>
+      <p>Buying local products supports small businesses and reduces carbon footprint from shipping.</p>
+    </div>
+  </div>
+</body>
+</html>

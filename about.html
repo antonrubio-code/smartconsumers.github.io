@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+    }
+
+    .top-left-title {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #0D47A1;
+      z-index: 100;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      z-index: 100;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 40px;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 2px solid #0D47A1;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .navbar .menu a:hover {
+      transform: scale(1.1);
+      background-color: #a6a6a6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 120px auto 50px;
+      padding: 20px;
+      background-color: #E3F2FD;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #0D47A1;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .team-photo {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .team-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+	
+    .player {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+      color: #0D47A1;
+    }
+
+    .player h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-left-title">SMART CONSUMER</div>
+
+  <div class="navbar">
+    <div class="menu">
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="facts.html">FACTS</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Maraming Anbilibabols Kami</h1>
+    <p>
+      Hey there! We’re the <strong>Group 4</strong>— a squad of <strong>fine-looking young men</strong> (yes, we said it 😏). This website is part of our <strong>Grade 12 ICT project</strong>, and we built it to help people learn how to use, buy, and handle everyday products safely and smartly.
+    </p>
+    <p>
+      We chose this topic because everyone’s gotta start somewhere. We wanted to be the guide for beginner consumers, helping them make their first purchases without regrets. And guess what? We made this whole site using nothing but HTML — no fancy builders, just raw code, creativity, and of course… <strong>our good looks</strong>.
+    </p>
+    <p>
+      Sure, the main goal is to secure that sweet high grade 😉, but along the way, we also learned a ton about consumer safety and web development.
+    </p>
+	<p>
+      This project was proudly made possible by the fine-looking young men of <strong>STI San Jose del Monte</strong>.
+    </p>
+    <p>
+         <strong>Thank you!</strong>
+    </p>
+	
+	<div class="player">
+    <h2>🎶 play while looking at our team photo 🎶</h2>
+    <audio controls>
+      <source src="images\themesongNgMgaAnbilibabols.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+    <div class="team-puto">
+      <h2>Team Photo</h2>
+      <img src="images/puto.png" alt="picture sana">
+	  <p>
+       <strong>Fine-looking members:</strong>
+    </p>
+	  <p>
+       <strong>Jeresano, Anton Rubio Girolamo J.</strong>
+    </p>
+	<p>
+       <strong>Martinez, Drew Enrico A.</strong>
+    </p>
+	<p>
+       <strong>Nonog, Earl Justine R.</strong>
+    </p>
+	<p>
+       <strong>Collantes, EightJohn S.</strong>
+    </p>
+	<p>
+       <strong>Baay, Sean Aaron</strong>
+    </p>
+    </div>
+  </div>
+</body>
+</html>

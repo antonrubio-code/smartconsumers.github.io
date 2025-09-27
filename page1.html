@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMART CONSUMER</title>
+  <style>
+    .top-left-title {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #0D47A1;
+      z-index: 100;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #0D47A1;
+      margin-top: 50px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      z-index: 100;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 40px;
+      background-color: #E3F2FD;
+      color: #0D47A1;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 2px solid #0D47A1;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .navbar .menu a:hover {
+      transform: scale(1.1);
+      background-color: #a6a6a6;
+    }
+
+    .top-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .top-image {
+      width: 400px;
+      height: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .top-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .top-description {
+      max-width: 600px;
+      font-size: 18px;
+      color: #0D47A1;
+    }
+
+    @media (max-width: 868px) {
+      .top-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .top-image {
+        width: 100%;
+        height: 450px;
+      }
+
+      .top-description {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+	
+/* Safety tips layout */
+.tip-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers picture + text together */
+  background: #87CEEB; /* sky blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 900px; /* keeps it neat in the center */
+  transition: transform 0.3s;
+}
+
+.tip-row:hover {
+  transform: translateY(-5px);
+}
+
+.tip-row img {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+  margin-right: 15px; /* small space between image & text */
+}
+
+.tip-row img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tip-text {
+  max-width: 700px;
+  text-align: center; /* centers text inside box */
+}
+
+.tip-text strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: navy; /* navy blue */
+}
+
+.tip-text span {
+  font-size: 16px;
+  color: navy; /* navy blue */
+}
+
+	
+  </style>
+</head>
+<body>
+  <div class="top-left-title">SMART CONSUMER</div>
+
+  <div class="navbar">
+    <div class="menu">
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="facts.html">FACTS</a>
+    </div>
+  </div>
+
+  <h1>Use It Right, Stay Bright!</h1>
+  <h2>Proper Usage of Consumer Products</h2>
+
+  <div class="container">
+    <div class="top-section">
+      <div class="top-image">
+        <img src="images\COVERS\1.jpg" alt="CONSUMER" />
+      </div>
+      <div class="top-description">
+        <h2>Why Does Proper Use Matter?</h2>
+        <p>
+          “When we buy products, we often think they’ll work perfectly no matter what. But using them the wrong way can waste money, cause accidents, or even harm us. Using items the right way makes life easier, safer, and smarter.” 
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tip-row">
+  <img src="images\pages\pg.1\1.jpg" alt="Labels" class="fade">
+  <div class="tip-text">
+    <strong>Always follow instructions on labels.</strong>
+    <span>→ Labels tell you how to use the product properly. Skipping them can lead to accidents.</span>
+  </div>
+</div>
+
+<div class="tip-row">
+  <img src="images\pages\pg.1\2.jpg" alt="Overuse" class="fade">
+  <div class="tip-text">
+    <strong>Don’t overuse—more doesn’t mean better.</strong>
+    <span>→ Using too much soap, medicine, or makeup can waste money and even harm your body.</span>
+  </div>
+</div>
+
+<div class="tip-row">
+  <img src="images\pages\pg.1\3.jpg" alt="Keep away from kids" class="fade">
+  <div class="tip-text">
+    <strong>Keep away from kids if dangerous.</strong>
+    <span>→ Children might play with cleaning agents or sharp items, which can be risky.</span>
+  </div>
+</div>
+
+<div class="tip-row">
+  <img src="images\pages\pg.1\4.jpg" alt="Purpose" class="fade">
+  <div class="tip-text">
+    <strong>Use products only for their real purpose.</strong>
+    <span>→ Shampoo is for hair, not for cleaning the floor. Wrong use can cause damage or danger.</span>
+  </div>
+</div>
+
+  
+  <script>
+  window.addEventListener("load", () => {
+    document.querySelectorAll(".fade").forEach(img => {
+      img.classList.add("show");
+    });
+  });
+</script>
+
+</body>
+</html>
